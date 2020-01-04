@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -20,7 +21,8 @@ namespace Hotellerie_Amine_.Models.HotellerieModel
         [Url(ErrorMessage ="ce n'est pas un url valide")]
         [Display(Name ="Site Web ")]
         public String SiteWeb { get; set; }
+        public String Pays { get; set; }
         public String lieu { get; set; }
-
+        public virtual ICollection<Appreciation> Appreciations { get; set; }
     }
 }

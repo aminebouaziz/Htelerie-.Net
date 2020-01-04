@@ -18,6 +18,7 @@ namespace Hotellerie_Amine_
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Hotels", action = "Index", id = UrlParameter.Optional }
             );
+
         }
     }
 }
